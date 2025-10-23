@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel ="icon" href="img/favicon.png" type="image/x-icon">
+    <title>INFORMACION - CONTACTO</title>
+</head>
+<body>
+    <header>
+        <h1>CONTACTO</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <p>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros.</p>
+        <h2 id="formulario-contacto">FORMULARIO DE CONTACTO</h2>
+        <form onsubmit="enviarFormulario()">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <script>
+        function enviarFormulario() {
+            alert("Gracias por contactarnos. Te responderemos lo antes posible.");
+        }
+    </script>
+    <footer><b>© Alejandro Guerra Abán | 2025</b></footer>
+</body>
+</html>
