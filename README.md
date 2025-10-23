@@ -2,6 +2,7 @@
 
 [![HTML Version](https://img.shields.io/badge/HTML-5-orange.svg)](https://www.w3schools.com/html/)
 [![CSS Version](https://img.shields.io/badge/CSS-3-blue.svg)](https://www.w3schools.com/css/)
+[![JS Version](https://img.shields.io/badge/JS_ECMAScript-6.0-yellow.svg)](https://www.w3schools.com/js/)
 ![Estado](https://img.shields.io/badge/Estado-En%20emisión-yellow)
 ![CC License](https://img.shields.io/badge/License-CC--BY--NC--ND-green.svg)
 <div align="center">
@@ -13,6 +14,89 @@
 
 # CURSO DE INTRODUCCIÓN A HTML, CSS Y JAVASCRIPT  
 # INTRODUCTORY COURSE ON HTML, CSS AND JAVASCRIPT
+
+Repositorio de **Alejandro Guerra Abán** para el módulo de **Aplicaciones Web** del curso **SMR 2ºA**.
+
+Aquí se recopilan actividades, ejercicios y apuntes teóricos desarrollados a lo largo del curso académico 2025–2026.
+
+Repository of **Alejandro Guerra Abán** for the **Web Applications** module of the **SMR 2ºA** course.
+
+This repository contains activities, exercises, and theoretical notes developed throughout the 2025–2026 academic year.
+
+---
+
+## 📁 Estructura del repositorio
+
+```plaintext
+SMR-2A-APLICACIONES-WEB/
+│
+├── EJERCICIOS/            # Ejercicios prácticos de clase
+├── PRACTICA DISEÑO WEB/                # Práctica 1
+└── TEORIA/      # Apuntes, resúmenes y explicaciones teóricas
+```
+---
+
+## ▶️ ¿Cómo usar este repositorio?
+
+1. Clona o descarga este repositorio:
+   ```bash
+   git clone https://github.com/Alejandro-Guerra-Aban/SMR-2A-APLICACIONES-WEB.git
+   ```
+2. Abre la carpeta en tu editor de código favorito, como **Visual Studio Code**, o cualquier otro entorno compatible con HTML CSS y JS (JavaScript).
+
+> [!TIP]
+> Si no quieres instalar nada, puedes usar editores online como:
+> - [Google Colab](https://colab.research.google.com/)
+
+---
+
+## 📌 Accesos rápidos
+
+Haz clic para acceder directamente a las carpetas más importantes del repositorio:
+
+- 📂 [EJERCICIOS](./EJERCICIOS) — Ejercicios prácticos organizados por temas vistos en clase.
+- 📂 [TEORIA](./TEORIA) — Apuntes, resúmenes y ejemplos teóricos de HTML CSS y JS (JavaScript).
+- 📂 [PRÁCTICA DISEÑO WEB](./PRACTICA%20DISEÑO%20WEB) — Práctica Nº1.
+> ⚠️ Estas carpetas se irán actualizando conforme avance el curso.  
+> Próximamente se añadirán más secciones como `PROYECTOS`, `RETOS` o `EVALUACIONES`.
+
+---
+
+## ⚙️ Requisitos
+
+> [!IMPORTANT]
+> Necesitarás:
+> - Editor de código (recomendado VS Code)
+> - Conexión a internet para poder accder al contenido
+
+---
+
+## 🧰 Herramientas recomendadas
+
+Para trabajar cómodamente con los archivos y ejercicios de este repositorio, se recomienda:
+
+- ✅ **Visual Studio Code** como editor de código  
+  [Descargar VS Code](https://code.visualstudio.com/)
+
+  - Extensiones recomendadas:
+    - `Live Preview` (para poder abrir una carpeta en el editor y poder ver el contenido del HTML más rápido, opcional)
+    - `GitLens` (para control de versiones, opcional)
+    - `Error Lens` (para control e identificación de errores, opcional)
+
+- ✅ Git (opcional)  
+  Útil para clonar y sincronizar el repositorio:
+  ```bash
+  git clone https://github.com/Alejandro-Guerra-Aban/SMR-2A-APLICACIONES-WEB.git
+  ```
+  ---
+
+## 📅 Información del curso
+
+- **Curso académico:** 2025–2026  
+- **Módulo:** Aplicaciones Web  
+- **Grupo:** SMR 2A  
+- **Autor:** Alejandro Guerra Abán  
+- **Instituto:** *IES MELCOR GASPAR DE JOVELLANOS*
 
 ---
 
