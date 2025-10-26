@@ -32,7 +32,8 @@ SMR-2A-APLICACIONES-WEB/
 │
 ├── EJERCICIOS/            # Ejercicios prácticos de clase
 ├── PRACTICA DISEÑO WEB/                # Práctica 1
-└── TEORIA/      # Apuntes, resúmenes y explicaciones teóricas
+├── TEORIA/      # Apuntes, resúmenes y explicaciones teóricas
+└── Tabla HTML 5 WEB semántica/      # Práctica 2
 ```
 ---
 
@@ -96,7 +97,7 @@ Para trabajar cómodamente con los archivos y ejercicios de este repositorio, se
 - **Módulo:** Aplicaciones Web  
 - **Grupo:** SMR 2A  
 - **Autor:** Alejandro Guerra Abán  
-- **Instituto:** *IES MELCOR GASPAR DE JOVELLANOS*
+- **Instituto:** *IES MELCHOR GASPAR DE JOVELLANOS*
 
 ---
 
