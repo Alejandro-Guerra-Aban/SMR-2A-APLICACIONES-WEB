@@ -115,6 +115,46 @@
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
             font-weight: bold;
         }
+
+        #sor {
+            background-color: #9ab0ff;
+        }
+
+        #ser {
+            background-color: #9ab0ff;
+        }
+
+        #seg {
+            background-color: #ffb3b3;
+        }
+
+        #apw {
+            background-color: #ffd580;
+        }
+
+        #ipe {
+            background-color: #d6a6ff;
+        }
+
+        #ing {
+            background-color: #b6e0ff;
+        }
+
+        #prog {
+            background-color: #fcb6ff;
+        }
+
+        #dig {
+            background-color: #ffc6a6;
+        }
+
+        #sos {
+            background-color: #a8ffde;
+        }
+
+        #rec {
+            background-color: #cccccc;
+        }
     </style>
 </head>
 
@@ -136,85 +176,48 @@
             <tbody>
                 <tr>
                     <td>15:00 - 15:50</td>
-                    <td>Sistemas operativos en red</td>
-                    <td>Servicios en red</td>
-                    <td>Servicios en red</td>
-                    <td>Seguridad Informatica</td>
-                    <td>Aplicaciones Web</td>
+                    <td id="sor" rowspan="2">Sistemas operativos en red</td>
+                    <td id="sor" rowspan="2">Servicios en red</td>
+                    <td id="ser" rowspan="3">Servicios en red</td>
+                    <td id="seg">Seguridad Informatica</td>
+                    <td id="apw" rowspan="2">Aplicaciones Web</td>
                 </tr>
                 <tr>
                     <td>15:50 - 16:55</td>
-                    <td>Sistemas operativos en red</td>
-                    <td>Servicios en red</td>
-                    <td>Servicios en red</td>
-                    <td>Servicios en red</td>
-                    <td>Aplicaciones Web</td>
+                    <td id="ser" rowspan="2">Servicios en red</td>
                 </tr>
                 <tr>
                     <td>16:55 - 17:45</td>
-                    <td>Intinerario para la empleabilidad</td>
-                    <td>Ingles</td>
-                    <td>Servicios en red</td>
-                    <td>Servicios en red</td>
-                    <td>Sistemas operativos en red</td>
+                    <td id="ipe">Intinerario para la empleabilidad</td>
+                    <td id="ing">Ingles</td>
+                    <td id="sor">Sistemas operativos en red</td>
                 </tr>
                 <tr>
                     <td>17:45 - 18:15</td>
-                    <td colspan="5"><b>Recreo</b></td>
+                    <td colspan="5" id="rec"><b>Recreo</b></td>
                 </tr>
                 <tr>
                     <td>18:15 - 19:10</td>
-                    <td>Programación en Python</td>
-                    <td>Sostenibilidad</td>
-                    <td>Aplicaciones Web</td>
-                    <td>Sistemas operativos en red</td>
-                    <td>Sistemas operativos en red</td>
+                    <td id="pro" rowspan="2">Programación en Python</td>
+                    <td id="sos">Sostenibilidad</td>
+                    <td id="apw" rowspan="2">Aplicaciones Web</td>
+                    <td id="sor" rowspan="3">Sistemas operativos en red</td>
+                    <td id="sor">Sistemas operativos en red</td>
                 </tr>
                 <tr>
                     <td>19:10 - 20:55</td>
-                    <td>Programación en Python</td>
-                    <td>Seguridad Informatica</td>
-                    <td>Aplicaciones Web</td>
-                    <td>Sistemas operativos en red</td>
-                    <td>Ingles</td>
+                    <td id="seg" rowspan="2">Seguridad Informatica</td>
+                    <td id="ing">Ingles</td>
                 </tr>
                 <tr>
                     <td>20:55 - 21:00</td>
-                    <td>Digitalización</td>
-                    <td>Seguridad Informatica</td>
-                    <td>Programación en Python</td>
-                    <td>Sistemas operativos en red</td>
-                    <td>Intinerario para la empleabilidad</td>
+                    <td id="dig">Digitalización</td>
+                    <td id="pro">Programación en Python</td>
+                    <td id="ipe">Intinerario para la empleabilidad</td>
                 </tr>
             </tbody>
         </table>
     </main>
     <footer>© 2025 Alejandro Guerra Abán | Práctica de Aplicaciones Web — IES Gaspar Melchor de Jovellanos — 2025</footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const celdas = document.querySelectorAll("tbody td");
-
-            const colores = {
-                "sistemas operativos en red": "#9ab0ff",
-                "servicios en red": "#a6f0a6",
-                "seguridad informatica": "#ffb3b3",
-                "aplicaciones web": "#ffd580",
-                "intinerario para la empleabilidad": "#d6a6ff",
-                "ingles": "#b6e0ff",
-                "programación en python": "#fcb6ff",
-                "digitalización": "#ffc6a6",
-                "sostenibilidad": "#a8ffde",
-                "recreo": "#cccccc"
-            };
-
-            celdas.forEach(td => {
-                const texto = td.textContent.trim().toLowerCase();
-                if (colores[texto]) {
-                    td.style.backgroundColor = colores[texto];
-                }
-            });
-        });
-    </script>
 </body>
 </html>
