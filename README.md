@@ -58,6 +58,7 @@ Haz clic para acceder directamente a las carpetas más importantes del repositor
 - 📂 [EJERCICIOS](./EJERCICIOS) — Ejercicios prácticos organizados por temas vistos en clase.
 - 📂 [TEORIA](./TEORIA) — Apuntes, resúmenes y ejemplos teóricos de HTML CSS y JS (JavaScript).
 - 📂 [PRÁCTICA DISEÑO WEB](./PRACTICA%20DISEÑO%20WEB) — Práctica Nº1.
+- 📂 [Tabla HTML 5 WEB semántica](./Tabla%20HTML%205%20WEB%20semántica) — Práctica Nº2
 > ⚠️ Estas carpetas se irán actualizando conforme avance el curso.  
 > Próximamente se añadirán más secciones como `PROYECTOS`, `RETOS` o `EVALUACIONES`.
 
