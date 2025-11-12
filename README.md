@@ -450,6 +450,214 @@ Server-side scripting languages are the foundation of modern **backend** develop
 
 ---
 
+## 🧠 EXAMEN TIPO TEST (PARTE 2)
+
+### 1️⃣ ¿Dónde se ejecutan los lenguajes de script del lado del servidor?
+- a) En el navegador  
+- b) En el servidor  
+- c) En la base de datos  
+
+---
+
+### 2️⃣ Observa la siguiente tabla y elige qué lenguaje pertenece al **lado del cliente**:
+
+| Lenguaje | Tipo | Ejemplo |
+|-----------|-------|----------|
+| PHP | Servidor | WordPress |
+| Node.js | Servidor | Express |
+| JavaScript | Cliente | Formularios dinámicos |
+
+- a) PHP  
+- b) JavaScript  
+- c) Node.js  
+
+---
+
+### 3️⃣ Mira este vídeo de repaso sobre **PHP** y responde:
+🎬 [Ver vídeo — Introducción a PHP](https://www.youtube.com/watch?v=OK_JCtrrv-c)
+
+> ¿Qué extensión suelen tener los archivos de PHP?
+- a) .html  
+- b) .php  
+- c) .js  
+
+---
+
+### 4️⃣ ¿Qué significa **DOM**?
+- a) Documento Objeto Manejador  
+- b) Document Object Model  
+- c) Data Online Mode  
+
+---
+
+### 5️⃣ ¿Qué framework pertenece a **Python**?
+- a) Express  
+- b) Flask  
+- c) Laravel  
+
+---
+
+### 6️⃣ En el siguiente código, ¿qué hace la línea `app.listen(3000)` en Node.js?
+
+```js
+app.listen(3000, () => console.log('Servidor iniciado'));
+```
+
+- a) Inicia el servidor en el puerto 3000  
+- b) Detiene el servidor  
+- c) Ejecuta un script PHP  
+
+---
+
+### 7️⃣ Haz clic para repasar los lenguajes más usados:
+
+<div align="center">
+
+<a href="https://www.w3schools.com/php/" target="_blank"><button style="padding:8px; background-color:#7952B3; color:white; border:none; border-radius:6px;">PHP</button></a>
+<a href="https://www.w3schools.com/nodejs/" target="_blank"><button style="padding:8px; background-color:#43853D; color:white; border:none; border-radius:6px;">Node.js</button></a>
+<a href="https://www.w3schools.com/python/" target="_blank"><button style="padding:8px; background-color:#3776AB; color:white; border:none; border-radius:6px;">Python</button></a>
+
+</div>
+
+¿Qué lenguaje de los anteriores se ejecuta sobre el motor **V8**?
+- a) Node.js  
+- b) PHP  
+- c) Python  
+
+---
+
+### 8️⃣ En ASP.NET, ¿qué símbolo se usa para insertar código C# dentro del HTML?
+- a) #  
+- b) @  
+- c) %  
+
+---
+
+### 9️⃣ Según el PDF, ¿qué tipo de contenido generan estos lenguajes?
+- a) Estático  
+- b) Dinámico  
+- c) Visual  
+
+---
+
+### 🔟 ¿Cuál de los siguientes pares es **correcto**?
+
+| Lenguaje | Framework |
+|-----------|------------|
+| PHP | Laravel |
+| Python | Flask |
+| Node.js | Express |
+
+- a) Todos son correctos  
+- b) Solo PHP y Python  
+- c) Solo Node.js  
+
+---
+
+### 11️⃣ Observa la tabla y responde:
+
+| Servidor | Lenguaje compatible |
+|-----------|--------------------|
+| Apache | PHP |
+| IIS | ASP.NET |
+| Node Server | Node.js |
+
+¿Cuál usa el **framework Razor**?  
+- a) Apache  
+- b) IIS  
+- c) Node Server  
+
+---
+
+### 12️⃣ ¿Qué formato de texto permite intercambiar datos entre frontend y backend?
+- a) HTML  
+- b) JSON  
+- c) CSS  
+
+---
+
+### 13️⃣ Mira este vídeo sobre Node.js:  
+🎬 [Curso básico de Node.js — Fazt](https://www.youtube.com/watch?v=TlB_eWDSMt4)
+
+> ¿Qué comando muestra la versión instalada de Node.js?
+- a) node -v  
+- b) node version  
+- c) npm -show  
+
+---
+
+### 14️⃣ ¿Qué lenguaje combina **HTML y C#** mediante Razor?
+- a) Python  
+- b) ASP.NET  
+- c) Ruby  
+
+---
+
+### 15️⃣ En Ruby on Rails, el método **render** sirve para:
+- a) Enviar una respuesta HTML al navegador  
+- b) Ejecutar código JavaScript  
+- c) Crear una base de datos  
+
+---
+
+### 16️⃣ ¿Qué similitud existe entre **Node.js + Express** y **Apache + PHP**?
+- a) Ambos procesan peticiones y envían respuestas desde el servidor  
+- b) Los dos funcionan sin servidor  
+- c) Solo funcionan en Windows  
+
+---
+
+### 17️⃣ Analiza el siguiente fragmento:
+
+```python
+@app.route("/")
+def inicio():
+    return "<h1>Hola desde Flask</h1>"
+```
+
+¿Qué hace el decorador `@app.route("/")`?
+- a) Define una ruta URL que ejecuta la función `inicio()`  
+- b) Muestra un error 404  
+- c) Cierra el servidor  
+
+---
+
+### 18️⃣ ¿Cuál es una **ventaja** de los lenguajes del lado del servidor?
+- a) El código no es visible para el usuario  
+- b) No necesitan servidor  
+- c) Se ejecutan más rápido que HTML  
+
+---
+
+### 19️⃣ ¿Qué base de datos es más usada con PHP?
+- a) PostgreSQL  
+- b) MySQL  
+- c) SQLite  
+
+---
+
+### 20️⃣ Pulsa el botón y revisa la comparativa final antes de responder:  
+
+<div align="center">
+<a href="https://www.youtube.com/watch?v=Z1RJmh_OqeA" target="_blank"><button style="padding:10px; background-color:#FF6347; color:white; border:none; border-radius:6px;">🔍 Ver comparativa Flask / Django</button></a>
+</div>
+
+> ¿Qué lenguaje utiliza Flask y Django?  
+- a) Python  
+- b) Node.js  
+- c) PHP  
+
+---
+
+## 🧾 Fin del examen
+
+> **Consejo:** si aciertas más de 16/20, tu dominio del backend está en un nivel excelente.  
+> 💡 Practica levantando un mini servidor con Flask o Node.js para afianzar lo aprendido.
+
+---
+
+---
+
 ### ✏️ PARTE 2: PREGUNTAS DE DESARROLLO / SHORT ANSWER QUESTIONS
 
 6. Explica qué es el **DOM** y para qué sirve.  
@@ -502,4 +710,6 @@ You may share it freely **with attribution**, but **modification and commercial 
 
 ---
 
-**Autor / Author: [@Alejandro Guerra Abán](https://www.github.com/Alejandro-Guerra-Aban)**  
+**Autor / Author: [@Alejandro Guerra Abán](https://www.github.com/Alejandro-Guerra-Aban)**
+
+
