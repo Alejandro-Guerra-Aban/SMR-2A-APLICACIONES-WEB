@@ -3,6 +3,9 @@
 [![HTML Version](https://img.shields.io/badge/HTML-5-orange.svg)](https://www.w3schools.com/html/)
 [![CSS Version](https://img.shields.io/badge/CSS-3-blue.svg)](https://www.w3schools.com/css/)
 [![JS Version](https://img.shields.io/badge/JS_ECMAScript-6.0-yellow.svg)](https://www.w3schools.com/js/)
+[![PHP](https://img.shields.io/badge/PHP-8.1-blueviolet.svg)](https://www.php.net/)
+[![Node.js](https://img.shields.io/badge/Node.js-25-green.svg)](https://nodejs.org/)
+[![Python](https://img.shields.io/badge/Python-3.14-blue.svg)](https://www.python.org/)
 ![Estado](https://img.shields.io/badge/Estado-En%20emisión-yellow)
 ![CC License](https://img.shields.io/badge/License-CC--BY--NC--ND-green.svg)
 <div align="center">
@@ -253,6 +256,234 @@ Crea una página web funcional aplicando HTML, CSS y JavaScript con accesibilida
 </body>
 </html>
 ```
+---
+
+# 🧠 TEMA 2 — LENGUAJES DE SCRIPT DEL LADO DEL SERVIDOR  
+# TOPIC 2 — SERVER-SIDE SCRIPTING LANGUAGES
+
+---
+
+## 📘 INTRODUCCIÓN / INTRODUCTION
+
+**ESPAÑOL:**  
+Los lenguajes de script del lado del servidor son aquellos que se ejecutan **en el servidor web**, antes de que la página llegue al navegador del usuario.  
+Su principal función es **generar contenido dinámico**, procesar datos y comunicarse con **bases de datos**.
+
+**ENGLISH:**  
+Server-side scripting languages are executed **on the web server**, before the page reaches the user’s browser.  
+Their main purpose is to **generate dynamic content**, process data, and interact with **databases**.
+
+---
+
+## ⚙️ CONCEPTO Y FUNCIONAMIENTO / CONCEPT AND FUNCTIONING
+
+| CLIENTE / CLIENT | SERVIDOR / SERVER |
+|------------------|------------------|
+| Envía una petición HTTP (GET, POST) | Recibe la petición |
+| Espera respuesta | Procesa con lenguaje de servidor |
+| Muestra el resultado HTML | Devuelve la página generada |
+
+> [!NOTE]
+> El código del servidor **nunca se muestra al usuario**; el navegador solo recibe el HTML resultante.
+
+---
+
+## 🌐 FRONTEND vs BACKEND
+
+| Aspecto | Frontend | Backend |
+|----------|-----------|----------|
+| Ejecución | Navegador (cliente) | Servidor |
+| Lenguajes comunes | HTML, CSS, JS | PHP, Node.js, Python, ASP.NET, Ruby |
+| Objetivo | Presentación visual | Lógica, seguridad, datos |
+| Visibilidad | Visible para el usuario | Oculto al usuario |
+
+---
+
+## 🧩 DOM (DOCUMENT OBJECT MODEL)
+
+**ESPAÑOL:**  
+El DOM representa la estructura de una página web como un **árbol de nodos**.  
+Cada etiqueta HTML es un nodo que JavaScript puede modificar (añadir, eliminar o cambiar contenido).
+
+**ENGLISH:**  
+The DOM represents a web page’s structure as a **tree of nodes**.  
+Each HTML tag is a node that JavaScript can modify (add, remove, or update dynamically).
+
+---
+
+## 💻 LENGUAJES PRINCIPALES / MAIN SERVER-SIDE LANGUAGES
+
+### 🟣 PHP
+Lenguaje clásico del lado del servidor, integrado con HTML y usado con bases de datos **MySQL**.  
+Ejemplo:
+
+```php
+<?php
+  echo "Hoy es " . date("d/m/Y");
+?>
+```
+
+Frameworks populares: **Laravel**, **Symfony**  
+Servidor habitual: **Apache**
+
+---
+
+### 🟢 NODE.JS
+Ejecuta **JavaScript** en el servidor. Ideal para aplicaciones en tiempo real.  
+Ejemplo:
+
+```js
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('Hola desde Node.js'));
+app.listen(3000);
+```
+
+Frameworks populares: **Express**, **NestJS**  
+Servidor habitual: **Nginx o Node Server**
+
+---
+
+### 🔵 PYTHON (FLASK / DJANGO)
+Lenguaje versátil usado también en IA y análisis de datos.  
+Ejemplo:
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "<h1>Hola desde Flask</h1>"
+
+app.run()
+```
+
+Frameworks populares: **Flask**, **Django**
+
+---
+
+### 🟠 ASP.NET (C#)
+Desarrollado por Microsoft, combina HTML con C# mediante **Razor**.  
+Ejemplo:
+
+```csharp
+@{
+  var fecha = DateTime.Now;
+}
+<h2>Fecha actual: @fecha</h2>
+```
+
+Frameworks populares: **ASP.NET Core**, **Blazor**
+
+---
+
+### 🔴 RUBY ON RAILS
+Framework MVC basado en el lenguaje **Ruby**.  
+Ejemplo:
+
+```ruby
+class WelcomeController < ApplicationController
+  def index
+    render html: "<h1>Hola desde Ruby on Rails</h1>".html_safe
+  end
+end
+```
+
+---
+
+## ⚖️ COMPARATIVA GENERAL / GENERAL COMPARISON
+
+| Lenguaje | Velocidad | Facilidad | Comunidad | Base de Datos | Frameworks |
+|-----------|------------|------------|------------|----------------|--------------|
+| PHP | Media-alta | Alta | Muy amplia | MySQL | Laravel, Symfony |
+| Node.js | Muy alta | Media | Muy activa | MongoDB | Express, NestJS |
+| Python | Media | Alta | Muy amplia | SQLite, PostgreSQL | Flask, Django |
+| ASP.NET | Alta | Media | Amplia | SQL Server | ASP.NET Core |
+| Ruby | Media | Media | Menor | PostgreSQL, MySQL | Rails |
+
+---
+
+## ✅ VENTAJAS Y DESVENTAJAS / ADVANTAGES & DISADVANTAGES
+
+### ✔️ Ventajas / Advantages
+- Permiten **contenido dinámico**.  
+- Acceso a **bases de datos**.  
+- El código es **invisible para el usuario**.  
+- Facilitan la **seguridad y control del flujo de datos**.
+
+### ❌ Desventajas / Disadvantages
+- Requieren **servidor configurado**.  
+- Mayor consumo de **recursos**.  
+- Más complejos que un sitio estático.
+
+---
+
+## 🧠 CONCLUSIÓN / CONCLUSION
+
+**ESPAÑOL:**  
+Los lenguajes de script del lado del servidor son la base del **backend** moderno. Permiten generar contenido dinámico, gestionar datos y ofrecer aplicaciones web interactivas y seguras.
+
+**ENGLISH:**  
+Server-side scripting languages are the foundation of modern **backend** development. They generate dynamic content, handle data, and provide interactive, secure web applications.
+
+---
+
+## 🧮 EXAMEN / EXAM
+
+### 📘 PARTE 1: PREGUNTAS TIPO TEST / MULTIPLE-CHOICE QUESTIONS
+
+1. ¿Dónde se ejecutan los lenguajes del lado del servidor?  
+   a) `En el navegador` b) `En el servidor` c) `En la base de datos`
+
+2. ¿Cuál de los siguientes **NO** es un lenguaje de servidor?  
+   a) `PHP` b) `Node.js` c) `CSS`
+
+3. ¿Qué framework pertenece a **Python**?  
+   a) `Flask` b) `Express` c) `Laravel`
+
+4. En Node.js, ¿qué comando inicia el servidor?  
+   a) `start server` b) `node app.js` c) `npm init`
+
+5. ¿Qué lenguaje usa **Razor** para integrar HTML y lógica?  
+   a) `Ruby` b) `C#` c) `PHP`
+
+---
+
+### ✏️ PARTE 2: PREGUNTAS DE DESARROLLO / SHORT ANSWER QUESTIONS
+
+6. Explica qué es el **DOM** y para qué sirve.  
+7. Diferencia entre **frontend** y **backend**.  
+8. Indica dos **ventajas** de los lenguajes del lado del servidor.  
+9. ¿Qué similitud hay entre **Node.js** y **PHP**?  
+10. ¿Por qué el código del servidor no es visible para el usuario?
+
+---
+
+### 💻 PARTE 3: PRÁCTICA / PRACTICAL TASK
+
+**Crea un servidor básico en Node.js que muestre “Servidor activo en puerto 3000”.**
+
+```js
+const http = require('http');
+
+http.createServer((req, res) => {
+  res.write('Servidor activo en puerto 3000');
+  res.end();
+}).listen(3000);
+```
+
+---
+
+## 📚 TIPS Y CONSEJOS DE ESTUDIO / STUDY TIPS
+
+> [!TIP]
+> - Divide el tema: primero teoría, luego práctica.  
+> - Haz un mini “Hola Mundo” con PHP, Node.js y Flask.  
+> - Usa comparaciones: el servidor **cocina** y el cliente **come el plato**.  
+> - Explica el tema en voz alta: si puedes enseñarlo, lo dominas.  
+> - Repasa con test tipo “flashcards” para recordar frameworks y usos.  
+> - Experimenta con ejemplos en [Replit](https://replit.com/) o [Glitch](https://glitch.com/).
 
 ---
 
