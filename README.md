@@ -6,6 +6,7 @@
 [![PHP](https://img.shields.io/badge/PHP-8.1-blueviolet.svg)](https://www.php.net/)
 [![Node.js](https://img.shields.io/badge/Node.js-25-green.svg)](https://nodejs.org/)
 [![Python](https://img.shields.io/badge/Python-3.14-blue.svg)](https://www.python.org/)
+![WordPress Version](https://img.shields.io/badge/WordPress-6.8-gray.svg)
 ![Estado](https://img.shields.io/badge/Estado-En%20emisión-yellow)
 ![CC License](https://img.shields.io/badge/License-CC--BY--NC--ND-green.svg)
 <div align="center">
@@ -34,7 +35,9 @@ This repository contains activities, exercises, and theoretical notes developed 
 SMR-2A-APLICACIONES-WEB/
 │
 ├── EJERCICIOS/            # Ejercicios prácticos de clase
+├── INSTALACION SERVICIO APACHE/ # Práctica 3
 ├── PRACTICA DISEÑO WEB/                # Práctica 1
+├── Practica instalación de WordPress/ # Práctica 4
 ├── TEORIA/      # Apuntes, resúmenes y explicaciones teóricas
 └── Tabla HTML 5 WEB semántica/      # Práctica 2
 ```
@@ -62,6 +65,8 @@ Haz clic para acceder directamente a las carpetas más importantes del repositor
 - 📂 [TEORIA](./TEORIA) — Apuntes, resúmenes y ejemplos teóricos de HTML CSS y JS (JavaScript).
 - 📂 [PRÁCTICA DISEÑO WEB](./PRACTICA%20DISEÑO%20WEB) — Práctica Nº1.
 - 📂 [Tabla HTML 5 WEB semántica](./Tabla%20HTML%205%20WEB%20semántica) — Práctica Nº2
+- 📂 [INSTALACION SERVICIO APACHE](./INSTALACION%20SERVICIO%20APACHE) — Práctica Nº3
+- 📂 [Practica instalación de WordPress](./Practica%20instalación%20de%20WordPress) — Práctica Nº4
 > ⚠️ Estas carpetas se irán actualizando conforme avance el curso.  
 > Próximamente se añadirán más secciones como `PROYECTOS`, `RETOS` o `EVALUACIONES`.
 
