@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - Mi Sitio Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <nav> <a href="index.html">Inicio</a> <a href="acerca.html">Acerca de</a> </nav>
+    </header>
+    <main>
+        <h2>Página de Inicio</h2>
+        <button>Pulsar</button>
+        <button disabled>Desactivado</button>
+        <p>Bienvenido a la página principal de este sitio web. Aquí podrás ver un ejemplo sencillo de cómo dos páginas
+            distintas pueden compartir una misma hoja de estilos CSS.</p>
+        <p id="texto">Este texto cambiará.</p>
+        <button id="boton" type="button" onclick="document.getElementById('texto').innerText='Texto Cambiado'">Ejecutar</button>
+        <button id="boton" type="button" onclick="document.getElementById('boton').innerHTML= '<p>Ejecutar otra vez</p>'">Ejecutar</button>
+
+        <main>
+        <button>Aceptar</button>
+        <button>Cancelar</button>
+        <button id="ayuda" onclick=funcion()>Ayuda</button>
+
+
+        <form>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <button id="enviar" type="submit">Enviar</button>
+            <button id="restablecer" type="reset">Restablecer</button>
+            
+        </form>
+        <a type="button" href="https://www.madrid.org" id="boton">Ayuda</a>
+
+        <video src="presentacion.mp4"
+        width="300"
+        height="300"
+        controls
+        autoplay
+        loop>
+        </video>
+        </main>
+    </main>
+    <footer>
+        <p>© 2025 Mi Sitio Web</p><!-- Para la C mantén pulsada la tecla Alt y escribe 0169 en el teclado numérico -->
+    </footer>
+
+    <script>
+        function funcion(){
+            alert("Enviando ayuda")
+        }
+        const date = new Date(872817240000);
+    </script>
+</body>
+
+</html>
