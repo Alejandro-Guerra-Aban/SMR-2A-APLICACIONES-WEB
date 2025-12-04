@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORDLE ESPAÑOL - © RuproRP</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.png" type="icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    /* 🎨 Estilos Base del Documento */
+    body {
+        /* Color de fondo suave (Dark mode ligero) para hacer que las casillas destaquen */
+        background-color: #121213; 
+        color: #FFFFFF; /* Texto blanco para el modo oscuro */
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding-top: 20px;
+        min-height: 100vh;
+    }
+    
+    /* 📜 Título */
+    h1 {
+        text-align: center;
+        color: #FFFFFF; /* Blanco, no azul, para consistencia con el dark mode */
+        border-bottom: 1px solid #3a3a3c;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        font-size: 2.2rem;
+        letter-spacing: 0.1em;
+    }
+
+    /* 🎲 Tablero de Juego */
+    #game-board {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Limitar el ancho máximo para una mejor visualización en pantallas grandes */
+        max-width: 350px; 
+        width: 100%;
+    }
+    
+    /* Fila de Letras */
+    .letter-row {
+        display: flex;
+        margin-bottom: 5px; /* Espacio vertical entre filas */
+    }
+
+    /* 🔳 Casillas de Letras (Tiles) */
+    .letter-box {
+        /* Dimensiones relativas para ser más responsive */
+        width: 62px;
+        height: 62px;
+        
+        margin: 2px;
+        font-size: 2rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        
+        /* Estilo inicial de la casilla */
+        border: 2px solid #3a3a3c; 
+        color: #FFFFFF;
+        background-color: transparent;
+        transition: transform 0.05s ease-in-out; /* Animación sutil al escribir */
+    }
+    
+    /* Estilo para las casillas con contenido (al escribir) */
+    .filled-box {
+        border-color: #565758; /* Borde más visible */
+    }
+
+    /* 🚥 Clases de Colores de Feedback (Cruciales para el Wordle) */
+
+    /* Letra correcta, posición correcta */
+    .correct {
+        background-color: #538d4e; /* Verde Wordle */
+        border: 2px solid #538d4e;
+        color: white;
+    }
+
+    /* Letra correcta, posición incorrecta */
+    .present {
+        background-color: #b59f3b; /* Amarillo Wordle */
+        border: 2px solid #b59f3b;
+        color: white;
+    }
+
+    /* Letra incorrecta */
+    .absent {
+        background-color: #3a3a3c; /* Gris oscuro Wordle */
+        border: 2px solid #3a3a3c;
+        color: white;
+    }
+
+    /* ⌨️ Teclado Virtual */
+    #keyboard-cont {
+        margin: 30px 0;
+        width: 100%;
+        max-width: 500px;
+        user-select: none; /* Evita que el texto del botón sea seleccionado */
+    }
+    
+    #keyboard-cont div {
+        display: flex;
+        justify-content: center; /* Centrar las filas del teclado */
+        margin: 5px 0; /* Espacio entre filas */
+    }
+
+    .keyboard-button {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #FFFFFF;
+        background-color: #818384; /* Gris del teclado */
+        border: none;
+        border-radius: 4px;
+        padding: 15px 10px;
+        margin: 0 4px; /* Espacio horizontal entre botones */
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.2s; /* Transición suave al pasar el cursor */
+        flex-grow: 1; /* Permite que los botones se expandan */
+        min-width: 30px;
+    }
+
+    /* Ajuste para las teclas especiales (Enter y Backspace) */
+    .keyboard-button.large-key {
+        padding: 15px 15px;
+        min-width: 45px;
+        font-size: 0.7rem; /* Fuente un poco más pequeña en las teclas grandes */
+    }
+    
+    .keyboard-button:hover {
+        background-color: #9a9c9d;
+    }
+
+    /* Estilos del teclado al recibir feedback */
+    .keyboard-button.correct,
+    .keyboard-button.present,
+    .keyboard-button.absent {
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+  <h1> Wordle Español </h1>
+
+  <div id="game-board">
+
+  </div>
+
+  <div id="keyboard-cont">
+    <div class="first-row">
+      <button class="keyboard-button">q</button>
+      <button class="keyboard-button">w</button>
+      <button class="keyboard-button">e</button>
+      <button class="keyboard-button">r</button>
+      <button class="keyboard-button">t</button>
+      <button class="keyboard-button">y</button>
+      <button class="keyboard-button">u</button>
+      <button class="keyboard-button">i</button>
+      <button class="keyboard-button">o</button>
+      <button class="keyboard-button">p</button>
+    </div>
+    <div class="second-row">
+      <button class="keyboard-button">a</button>
+      <button class="keyboard-button">s</button>
+      <button class="keyboard-button">d</button>
+      <button class="keyboard-button">f</button>
+      <button class="keyboard-button">g</button>
+      <button class="keyboard-button">h</button>
+      <button class="keyboard-button">j</button>
+      <button class="keyboard-button">k</button>
+      <button class="keyboard-button">l</button>
+    </div>
+    <div class="third-row">
+      <button class="keyboard-button">Del</button>
+      <button class="keyboard-button">z</button>
+      <button class="keyboard-button">x</button>
+      <button class="keyboard-button">c</button>
+      <button class="keyboard-button">v</button>
+      <button class="keyboard-button">b</button>
+      <button class="keyboard-button">n</button>
+      <button class="keyboard-button">m</button>
+      <button class="keyboard-button">Enter</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
