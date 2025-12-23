@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Navidad Mágica</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mountains+of+Christ
+mas:wght@700&family=Snowburst+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Fondo árbol pantalla completa -->
+    <div id="arbol">
+      <div id="wrapper">
+        <h1>&#x1F384; Bienvenido a la Navidad Mágica &#x1F384;</h1>
+        <!-- Invitación a la fiesta solo visible con hover -->
+        <div id="invitacion">&#x2728; Ven a mi fiesta el 25 &#x2728;</div>
+
+        <!-- Descripción -->
+        <div id="nota">
+          Una noche especial llena de magia, nieve y sorpresas.<br />
+          Acércate al árbol, descubre el mensaje y observa el trineo surcando el
+          cielo.
+        </div>
+
+        <!-- Botón del villancico -->
+        <button id="botonSonido">Activar / Parar villancico</button>
+      </div>
+    </div>
+
+    <!-- Trineo por encima de todo -->
+    <img id="trineo" src="imagenes/trineo.gif" alt="Trineo de Papá Noel" />
+
+    <!-- Contenedor nieve -->
+    <div id="nieve"></div>
+
+    <!-- Reloj esquina inferior izquierda -->
+    <div id="reloj"></div>
+
+    <!-- Autor esquina inferior derecha -->
+    <div id="autor">© Alejandro Guerra Abán | Brian Burgos Recuero</div>
+
+    <!-- Audios -->
+    <audio id="villancico" src="audio/villancico.mp3" loop></audio>
+    <audio id="hoho" src="audio/hoho.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

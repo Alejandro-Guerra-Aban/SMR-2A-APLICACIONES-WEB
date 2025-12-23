@@ -1,0 +1,191 @@
+/* ================================== 
+   AJUSTES GENERALES 
+   ================================== */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #001b33;
+  color: white;
+  font-family: "Indie Flower", cursive;
+  overflow-x: hidden;
+}
+
+/* ================================== 
+   FONDO DEL ÁRBOL 
+   ================================== */
+
+#arbol {
+  position: relative;
+  width: 100%; /*Juega con estos valores */
+  height: 100vh;
+  background-image: url("imagenes/arbolnavidad.jpg");
+  background-size: cover;
+  background-position: center top;
+  z-index: 1;
+}
+
+/* ================================== 
+   CONTENIDO SOBRE EL FONDO 
+   ================================== */
+
+#wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+  text-shadow: 0 0 4px #000;
+}
+
+/* EL TITULO */
+h1 {
+  font-family: "Snowburst One", cursive;
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ========================================== 
+   INVITACIÓN (La hacemos visible con hover) 
+   ========================================== */
+
+#invitacion {
+  font-family: "Mountains of Christmas", cursive;
+  font-size: 1.8rem;
+  margin-bottom: 18px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#arbol:hover #invitacion {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ================================== 
+   TEXTO DESCRIPTIVO 
+   ================================== */
+
+#nota {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 8px auto 25px auto;
+}
+
+/* ================================== 
+   BOTÓN VILLANCICO (ABAJO CENTRADO) 
+   ================================== */
+
+#botonSonido {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #ffffffdd;
+  z-index: 9000;
+}
+
+/* ================================== 
+   TRINEO (DE DERECHA A IZQUIERDA) 
+   Si el trineo no se ve prueba a activarlo con otro sistema 
+   ================================== */
+
+#trineo {
+  position: fixed;
+  top: 20vh; /* altura del vuelo */
+  right: -400px; /* empieza fuera de la pantalla a la derecha */
+  width: 320px; /* tamaño del trineo */
+  pointer-events: none;
+  z-index: 99999; /* por encima de todo */
+  
+}
+
+/* Activado desde JS */
+.volando {
+    opacity: 1;
+    animation: volarIzq 7s linear forwards;
+}
+
+/* Movimiento hacia la izquierda */
+@keyframes volarIzq {
+  from {
+    right: -400px;
+  }
+  to {
+    right: 110vw;
+  }
+}
+
+/* ================================== 
+   EFECTO DE NIEVE 
+   ================================== */
+
+#nieve {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 500;
+}
+
+.copo {
+  position: absolute;
+  top: -10vh;
+  font-size: 20px;
+  animation: caer linear infinite;
+}
+
+@keyframes caer {
+  0% {
+    transform: translateY(-10vh);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
+}
+
+/* ========================================== 
+   EL RELOJ EN LA ESQUINA INFERIOR IZQUIERDA  
+   ========================================== */
+
+#reloj {
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+  font-family: "Snowburst One", cursive;
+  font-size: 1.2rem;
+  z-index: 9000;
+}
+
+/* ================================== 
+   AUTOR ESQUINA DERECHA INFERIOR Poner vuestros nombres 
+   ================================== */
+
+#autor {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 1.1rem;
+  font-style: italic;
+  z-index: 9000;
+}
+
+.elemento {
+  animation: caer 5s linear infinite;
+}
